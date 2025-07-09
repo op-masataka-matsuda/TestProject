@@ -42,6 +42,16 @@ const config: Config = {
     locales: ['ja'],
   },
 
+  plugins: [
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        indexDocs: true,
+        language: "ja",
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
