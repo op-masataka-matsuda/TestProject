@@ -44,10 +44,11 @@ const config: Config = {
 
   plugins: [
     [
-      require.resolve("@cmfcmf/docusaurus-search-local"),
+      require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         indexDocs: true,
-        language: "ja",
+        indexBlog: true,
+        language: ["en", "ja"],
       },
     ],
   ],
